@@ -6,7 +6,7 @@ const mysql = require("mysql");
 //   host: "localhost",
 //   port: 3306,
 //   user: "root",
-//   password: "bean2326bean2326",
+//   password: ",
 //   database: "states_db"
 // });
 
