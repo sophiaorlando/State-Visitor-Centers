@@ -2,7 +2,6 @@ const express = require("express");
 const visitorCenter = require("../models/visitorCenter.js");
 
 
-
 var router = express.Router();
 
 // router for index handlebars that populated dropdown menu with states
