@@ -1,0 +1,41 @@
+<header>
+    <h1 class="size">WELCOME TO {{stateInfo.[0].state}}</h1>
+</header>
+
+<!-- state visitor center information being populated to the page -->
+
+<div class="row">
+    <div class="card column" style="width: 18rem;">
+        <div class="card-body">
+            {{#each stateInfo}}
+            <div class="info">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text">Gasoline: ${{this.gasoline}}</p>
+                <p class="card-text">MidGrade: ${{this.midGrade}}</p>
+                <p class="card-text">Premium: ${{this.premium}}</p>
+                <p class="card-text">Diesel: ${{this.diesel}}</p>
+                <p class="button"><a href="{{this.url}}" target="_blank" class="btn">Visit Site</a></p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+    <a href="#" class="scrollToTop">Scroll To Top</a>
+
+
+<script>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+
+    // click event to scroll to top
+    $('.scrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+</script>

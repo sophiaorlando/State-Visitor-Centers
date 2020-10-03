@@ -1,0 +1,49 @@
+<header>
+    <h1 class="size">Find Visitor Centers in your State!</h1>
+</header>
+
+<!--drop down menu for states -->
+<div class="dropdown dropright">
+    <a class="btn dropdown-toggle col-6" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Choose a State
+    </a>
+
+    <div>
+        <ul class="dropdown-menu col-6" aria-labelledby="dropdownMenuLink">
+            {{#each states}}
+            <li><a class="dropdown-item" href="#" data-state={{this.state}}>{{this.state}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+        // bootstrap javascript to trigger dropdown
+
+        $('.dropdown-toggle').dropdown()
+
+        //javascript to trigger on click function when user clicks on a state
+
+
+        $(".dropdown-item").on("click", function () {
+            console.log("hello, welcome to the console!")
+            let selectedState = $(this).data("state")
+            let url = "/api/" + selectedState
+
+            // ajax call to retrieve data and populate the page with information about selected state
+
+            $.ajax({
+                url: url,
+                success: function (result) {
+                    document.write(result);
+
+                }
+            })
+        })
+    })
+
+</script>

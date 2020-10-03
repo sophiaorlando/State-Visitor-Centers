@@ -1,0 +1,128 @@
+
+.row {
+    display: flex;
+}
+
+.column{
+    flex: 50%;
+}
+.card{
+    border-color:black;
+    border-radius: 5px;
+    border-width:3px;
+    margin:50px;
+    
+}
+
+.card-body{
+    padding:0px
+}
+.info{
+    border-width:5px;
+    border-color: #fdfd00ee ;
+    border-radius: 3px;;
+    border-style:solid;
+    padding:15px;
+    color: #fdfd00ee;
+    background-color: #9400D3;
+    font-size: 30px;
+    font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+    letter-spacing:5px;
+
+
+}
+h5{
+    font-size: 40px;
+    font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+    letter-spacing:5px;
+    color:white;
+
+}
+
+.btn{
+    background-color:#00bfff;
+    border-width:0px;
+    border-radius: 5px;;
+    font-family:arial;
+    font-size:25px; 
+    color:#FF1493;   
+    -webkit-text-stroke-width:1px;
+}
+
+.btn:hover{
+    background-color:#00bfff;
+    color:#FF1493;
+    box-shadow: 10px 10px 10px 0px #FF1493;
+    border-radius: 5px;;
+    font-family:arial;
+    font-size:25px; 
+
+}
+
+.btn:focus{
+    background-color:#00bfff;
+    color:#FF1493;
+    box-shadow: 10px 10px 10px 0px #FF1493;
+    border-radius: 5px;;
+    font-family:arial;
+    font-size:25px; 
+}
+
+.body{
+    background-color:black;
+}
+
+header{
+    background-color:black;
+    text-align:center;
+    margin:10px;
+    padding:50px;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.size{
+    font-size:50px;
+    text-shadow: 10px 10px #FF1493, 20px 20px #00bfff ;
+
+}
+
+.dropdown-menu{
+    background-color: #00bfff;
+}
+
+.dropdown-item{
+    color: #9400D3;
+    font-family:arial;
+    font-size:30px; 
+}
+
+.dropdown-item:hover, :focus{
+    color: #9400D3;
+    background-color: #fdfd00ee;
+    font-family:arial;
+    font-size:30px; 
+}
+
+.scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:20px; 
+    margin-top:10px;
+    font-size:22px;
+    text-align:center; 
+    background: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    border-radius: 5px;
+    position:fixed;
+    bottom:75px;
+    right:40px;
+    display:none;
+    
+}
+.scrollToTop:hover{
+    color: #00bfff;
+    background-color: #FF1493;
+}
+
