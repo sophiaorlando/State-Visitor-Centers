@@ -27,7 +27,6 @@
 6. Refresh page to start new search
 
 ## Known Errors:
-* MySQL database duplicates the Visitor Center data output onto the screen
 * User must refresh page to begin new search
     * Goal: to have user click on "Welcome to ___" and be taken to the homepage to begin a new search.
 * Some states do not have Visitor Center data
