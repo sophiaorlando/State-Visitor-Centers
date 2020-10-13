@@ -19,12 +19,12 @@
 }
 .info{
     border-width:5px;
-    border-color: #fdfd00ee ;
+    border-color: white ;
     border-radius: 3px;;
     border-style:solid;
     padding:15px;
-    color: #fdfd00ee;
-    background-color: #9400D3;
+    color: white;
+    background-color: #08301d;
     font-size: 30px;
     font-family:Futura, "Trebuchet MS", Arial, sans-serif;
     letter-spacing:5px;
@@ -39,20 +39,38 @@ h5{
 
 }
 
-.btn{
-    background-color:#00bfff;
+.btn, .siteBtn{
+    background-color:white;
     border-width:0px;
     border-radius: 5px;;
     font-family:arial;
     font-size:25px; 
-    color:#FF1493;   
+    color:#043b20;   
     -webkit-text-stroke-width:1px;
 }
 
 .btn:hover{
-    background-color:#00bfff;
-    color:#FF1493;
-    box-shadow: 10px 10px 10px 0px #FF1493;
+    background-color:#043b20;
+    color:white;
+    box-shadow: 10px 10px 10px 0px white;
+    border-radius: 5px;;
+    font-family:arial;
+    font-size:25px; 
+
+}
+.siteBtn:hover{
+    background-color:black;
+    color:white;
+    box-shadow: 10px 10px 10px 0px white;
+    border-radius: 5px;;
+    font-family:arial;
+    font-size:25px; 
+
+}
+.siteBtn:focus{
+    background-color:black;
+    color:white;
+    box-shadow: 10px 10px 10px 0px white;
     border-radius: 5px;;
     font-family:arial;
     font-size:25px; 
@@ -60,9 +78,9 @@ h5{
 }
 
 .btn:focus{
-    background-color:#00bfff;
-    color:#FF1493;
-    box-shadow: 10px 10px 10px 0px #FF1493;
+    background-color:#043b20;
+    color:white;
+    box-shadow: 10px 10px 10px 0px white;
     border-radius: 5px;;
     font-family:arial;
     font-size:25px; 
@@ -73,33 +91,34 @@ h5{
 }
 
 header{
-    background-color:black;
     text-align:center;
     margin:10px;
     padding:50px;
     color:white;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: url("https://images.unsplash.com/photo-1584225697140-8bef0e4daab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
+    /* background-color:black; */
 
 }
 .size{
     font-size:50px;
-    text-shadow: 10px 10px #FF1493, 20px 20px #00bfff ;
+    text-shadow: 10px 10px #043b20, 20px 20px #056336 ;
 
 }
 
 .dropdown-menu{
-    background-color: #00bfff;
+    background-color: #043b20;
 }
 
 .dropdown-item{
-    color: #9400D3;
+    color: #056336;
     font-family:arial;
     font-size:30px; 
 }
 
 .dropdown-item:hover, :focus{
-    color: #9400D3;
-    background-color: #fdfd00ee;
+    color: white;
+    background-color: #043b20;
     font-family:arial;
     font-size:30px; 
 }
@@ -122,7 +141,7 @@ header{
     
 }
 .scrollToTop:hover{
-    color: #00bfff;
-    background-color: #FF1493;
+    color: #043b20;
+    background-color: white;
 }
 
