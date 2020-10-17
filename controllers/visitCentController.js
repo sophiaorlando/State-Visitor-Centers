@@ -21,7 +21,6 @@ router.get("/api/:state", function (req, res){
     let selectedState = req.params.state
 
     visitorCenter.bystate(selectedState, function(data){
-        console.log(data)
         for (let index = 0; index < data.length; index++) {
             const capitalState = data[index].state
             var upperState = capitalState.toUpperCase()

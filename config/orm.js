@@ -24,8 +24,6 @@ const orm = {
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
 
-        console.log(queryString);
-
         connection.query(queryString, vals, function (err, result) {
             if (err) {
                 throw err;
@@ -43,7 +41,6 @@ const orm = {
         queryString += " WHERE ";
         queryString += condition;
 
-        console.log(queryString);
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
@@ -77,7 +74,6 @@ findByState: function (state, cb) {
         WHERE visitorCenterInfo.state = "${state}";`
 
         connection.query(queryString, function (err, result) {
-            console.log(state)
             if (err) {
                 throw err;
             }
